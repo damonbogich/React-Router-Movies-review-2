@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {Route} from 'react-router-dom';
 
-
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
 import Movie from './Movies/Movie';
@@ -34,7 +33,6 @@ export default function App () {
     }
   };
 
-  console.log(saved, 'saved here')
   return (
     <div>
       <SavedList list={saved} />

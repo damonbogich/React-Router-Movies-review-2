@@ -23,8 +23,6 @@ export default function Movie(props) {
       .catch(error => {
         console.error(error);
       });
-    // This effect should run every time time
-    // the `id` changes... How could we do this?
   }, [id]);
 
   // Uncomment this only when you have moved on to the stretch goals

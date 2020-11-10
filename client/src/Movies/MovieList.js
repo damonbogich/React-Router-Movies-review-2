@@ -15,11 +15,9 @@ export default function MovieList(props) {
 function MovieDetails(props) {
   console.log(props, 'movied details props');
   
-
   return (
     <Link to={`/movies/${props.movie.id}`}>
       <MovieCard movie={props.movie} />
     </Link>
-    
   );
-}
+};
