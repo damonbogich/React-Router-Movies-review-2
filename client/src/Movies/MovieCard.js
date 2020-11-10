@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieCardBottom from './MovieCardBottom';
 
 export default function MovieCard (props) {
   console.log(props, 'movie card props')
@@ -11,6 +12,9 @@ export default function MovieCard (props) {
         <div className="movie-metascore">
           Metascore: <strong>{props.movie.metascore}</strong>
         </div>
+        {props.movie.stars &&
+        <MovieCardBottom stars={props.movie.stars}/>
+        }
       </div>
   )
 }
